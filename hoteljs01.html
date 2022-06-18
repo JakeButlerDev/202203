@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1><center>Javascript Hotel</center></h1>
+    <h2>Search for a room:</h2>
+    <input id="guestName" type="text" placeholder="Your name"><br>
+    <select id="guestRoomType">  
+        <option>Single</option>  
+        <option>Double</option>  
+        <option>Queen</option>  
+        </select><br>
+    <input id="lengthOfStay" type="text" placeholder="# of nights"><br>
+    <select id="smokingPreference">
+            <option>Smoking</option>
+            <option>Non Smoking</option>
+            </select><br>
+        </select>
+    <button onclick="bookRoom()">Book A Room</button>
+
+    
+    <h2>Booked Rooms</h2>
+    
+    
+    <h2>Available Rooms</h2>
+    <h3>Enter your preferences:</h3>
+    <input id="guestNameAvail" type="text" placeholder="Your name"><br>
+    <select id="guestRoomTypeAvail">  
+        <option>Single</option>  
+        <option>Double</option>  
+        <option>Queen</option>  
+    </select><br>
+    <input id="lengthOfStayAvail" type="text" placeholder="# of nights"><br>
+    <select id="smokingPreferenceAvail">
+        <option>Smoking</option>
+        <option>Non Smoking</option>
+    </select><br>
+    </select>
+
+    <select id="availRoomWanted">
+        <script>getRooms()</script>
+        <option value=getRooms[0]>1</option>
+        <option></option>
+    </select>
+    <button onclick="bookRoomAvail()">Book Selected Room</button>
+
+<script src="hoteljs01.js"></script>
+</body>
+</html>
